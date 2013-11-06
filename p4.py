@@ -1,10 +1,5 @@
 import sys
 
-"""
-lkajsflajs
-
-"""
-
 def main():
   print 'hi'
 
