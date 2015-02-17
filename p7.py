@@ -1,19 +1,21 @@
 import sys
+import math
 
 def isprime(num):
-  for i in range(2, num):
-    #isroundnum() in python??
-    if(isroundnum(num/i)):
+  sqrt = math.sqrt(num)
+  for i in range(2, int(sqrt)):
+    if(num % i == 0):
       return False
   return True
 
 def main():
-  solution = 0
-  is_found = 1
+  #solution = 0
+  #is_found = 1
 
   #skipping 2, special case
   #know 2 is the first prime
   for i in range(3, 10):
+    #print i
     isprime(i)
 
   """
